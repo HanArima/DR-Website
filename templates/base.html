@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #0288d1;
+    color: white;
+    padding: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#mid-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #81d4fa;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#mid-section h1 {
+    font-size: 2.5em;
+    color: #01579b;
+}
+
+#mid-section h2 {
+    font-size: 1.5em;
+    color: #0277bd;
+}
+
+#mid-section h4 {
+    font-size: 1em;
+    color: #0288d1;
+}
+
+#to_pages {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+
+#to_pages div {
+    text-align: center;
+    padding: 15px;
+    background-color: #b3e5fc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#to_pages button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#to_pages button:hover {
+    background-color: #01579b;
+}
+
+footer {
+    text-align: center;
+    background-color: #0288d1;
+    color: white;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <ul>
+        <li>Detect</li>
+        <li>Revisit</li>
+    </ul>
+</header>
+
+<section id="mid-section">
+    <h2>Welcome</h2>
+    <h1>Automated Diabetic Retinopathy Detection</h1>
+    <h4>Provide us with the Fundus Image of the Patient and we will give you an idea whether the patient has Diabetes or not...</h4>
+</section>
+
+<section id="to_pages">
+    <div id="detect">
+        <button>Detect</button>
+        <p>For those who want to detect the possibility by logging in and uploading the Fundus Image.</p>
+    </div>
+    <div id="revisit">
+        <button>Revisit</button>
+        <p>For those who want to revisit their previous predictions by providing their login details.</p>
+    </div>
+</section>
+
+<footer>
+    Developed and coded by Garima Hansa
+</footer>
+
+</body>
+</html>
+
