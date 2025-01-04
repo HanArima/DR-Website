@@ -1,2 +1,2 @@
 Flask
-guricorn
+gunicorn
