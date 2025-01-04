@@ -189,7 +189,7 @@
             <label for="password">Auth Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Submit</button>
+            <button type="submit" id="submitButton">Submit</button>
         </form>
     </div>
 
@@ -210,6 +210,13 @@
 </footer>
 
 <script>
+    document.getElementById('revisitForm').addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById('submitButton').click();
+        }
+    });
+    
     document.getElementById('picture').addEventListener('change', function(event) {
         const file = event.target.files[0];
         const preview = document.getElementById('preview');
